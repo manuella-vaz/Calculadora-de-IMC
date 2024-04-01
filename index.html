@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<headhttps://jsfiddle.net/#>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manuella Vaz">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+<section id="form-IMC">
+    <form>
+        <p class="titulo">Calcule o seu IMC:</p>
+        <div class="peso">
+            <label for="txtpeso">Peso:</label>
+            <input type="text" id="txtpeso"></input>
+        </div>
+
+        <div class="altura">
+            <label for="txtaltura">Altura:</label>
+            <input type="text" id="txtaltura"></input>
+        </div>
+
+        <div class="sexo">
+            <label for="rdsexo">Sexo:</label>
+                <input type="radio" id="rdf" name="rdsexo" value="F" checked/>
+                <label for="rdf">F</label>
+
+                <input type="radio" id="rdm" name="rdsexo" value="M"/>
+                <label for="rdm">M</label>
+        </div>
+    
+        <div class="resultado">
+            <label for="txtresultado" id="tituloresultado">Resultado:</label>
+            <input type="text" disabled id="txtresultado"></input>
+        </div>
+
+        <div class="buttons">
+            <input class="btn" type="button" onclick="calculoimc()" id="btcalcu" value="Calcular"/>
+            <input class="btn" type="reset" id="btlim" value="Limpar" onclick="foco()"/>
+        </div>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
